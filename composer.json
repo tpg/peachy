@@ -1,0 +1,49 @@
+{
+    "name": "thepublicgood/peachy",
+    "description": "A custom Peach Payments server-to-server client library for Laravel",
+    "keywords": [
+        "peach",
+        "payments",
+        "gateway"
+    ],
+    "homepage": "https://github.com/tpg/peachy",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "THEPUBLICGOOD",
+            "email": "makers@thepublicgood.dev",
+            "homepage": "https://thepublicgood.dev",
+            "role": "Developer"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "TPG\\Peachy\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "TPG\\Peachy\\Tests\\": "tests/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "illuminate/contracts": "^10.48|^11.0",
+        "illuminate/support": "^10.48|^11.0"
+    },
+    "require-dev": {
+        "laravel/framework": "^10.48|^11.0",
+        "orchestra/testbench": "^8.0|^9.0",
+        "pestphp/pest": "^2.0",
+        "spatie/ray": "^1.40"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
